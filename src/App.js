@@ -5,7 +5,7 @@ import Footer from "./landingpage/footer";
 import HomePage from "./landingpage/home/homepage";
 import ContactPage from "./landingpage/contact/contactpage";
 import CocurricularPage from "./landingpage/cocurricular/cocurricularpage";
-import AdmissionPage from "./landingpage/admissions/admissionpage";
+import AdmissionPage from "./landingpage/admission/AdmissionPage";
 import AcademicsPage from "./landingpage/academics/academicspage";
 import AboutPage from "./landingpage/about/aboutpage";
 import Notfound from "./landingpage/Notfound";
