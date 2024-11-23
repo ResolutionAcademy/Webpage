@@ -81,7 +81,7 @@ function Head(){
   useEffect(() => {
     const interval = setInterval(() => {
       setWelcome((prev) => {
-        if (index >= message.length) {
+        if (index > message.length) {
           setIndex(1); // Reset the index
           return "W"; // Clear the welcome message
         } else {

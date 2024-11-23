@@ -26,3 +26,32 @@
 .h-links:hover{
   text-decoration: underline;
 }
+
+.hero-section{
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+.slide-left-enter {
+  animation: slide-left 0.5s forwards; /* Animation lasts 0.5 seconds */
+}
+
+@keyframes slide-left {
+  0% {
+    background-position: 100% 0; /* Start with the image off-screen to the right */
+  }
+  100% {
+    background-position: 0 0; /* Move the image to its original position */
+  }
+}
+
+.quick-links{
+   background-color: #0368ED;
+}
+
+.quick-links a{
+  color:white;
+  text-decoration: none;
+}
