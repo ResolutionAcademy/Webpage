@@ -14,7 +14,7 @@ function Admission() {
         style={{ backgroundColor: "#801034" }}
       >
         <div
-          className="col-2 p-3 text-center m-3"
+          className="col-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "white" }}
         >
           <i class="fa-solid fa-address-card" style={{ fontSize: "9rem" }}></i>
@@ -23,7 +23,7 @@ function Admission() {
           <b>REGISTRATION FORM</b>
         </div>
         <div
-          className="col-2 p-3 text-center m-3"
+          className="col-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "white" }}
         >
           <i
@@ -35,7 +35,7 @@ function Admission() {
           <b>ADMISSION PROCESS</b>
         </div>
         <div
-          className="col-2 p-3 text-center m-3"
+          className="col-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "white" }}
         >
           <i class="fa-solid fa-list" style={{ fontSize: "9rem" }}></i>

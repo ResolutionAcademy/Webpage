@@ -6,6 +6,14 @@
    max-width: 100%;
 }
 
+h1 {
+  font-size: 2.5rem; /* Example size */
+}
+
+h2 {
+  font-size: 2rem; /* Slightly smaller */
+}
+
 .app{
   height: 100vh;
    display: flex;

@@ -7,9 +7,6 @@ export default function AdmissionPage() {
           {/* Header */}
           <div className="space-y-2">
             <h1 className="text-2xl font-bold text-blue-950">Admission Journey</h1>
-            <div className="text-sm text-gray-600">
-              Resolution Academy Senior Secondary School {'>'} Admissions {'>'} Admission Journey
-            </div>
           </div>
   
           {/* Introduction */}

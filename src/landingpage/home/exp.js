@@ -1,4 +1,24 @@
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 function LearningExperience() {
+
+  const [ref, inView] = useInView()
+  const controls = useAnimation()
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
+
+
+  const featureVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+  }
+
   return (
     <div className="container">
       <div className="row justify-content-center align-items-center">
@@ -9,9 +29,17 @@ function LearningExperience() {
         <div className="col-3" style={{ border: "1px solid black" }}></div>
       </div>
 
-      <div className="row justify-content-center">
-        <div
-          className="col-2 p-3 text-center m-3"
+      <motion.div
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={{
+          visible: { transition: { staggerChildren: 0.1 } }
+        }} className="row justify-content-center"
+        >
+
+        <motion.div variants={featureVariants}
+          className="col-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "#801034", color: "white" }}
         >
           <i
@@ -21,9 +49,9 @@ function LearningExperience() {
           <br></br>
           <br></br>
           <b>ACADEMIC DEVELOPMENT</b>
-        </div>
-        <div
-          className="col-2 p-3 text-center m-3"
+        </motion.div>
+        <motion.div variants={featureVariants}
+          className="col-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "#801034", color: "white" }}
         >
           <i
@@ -33,26 +61,26 @@ function LearningExperience() {
           <br></br>
           <br></br>
           <b>PHYSICAL DEVELOPMENT</b>
-        </div>
-        <div
-          className="col-2 p-3 text-center m-3"
+          </motion.div>
+          <motion.div variants={featureVariants}
+          className="col-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "#801034", color: "white" }}
         >
           <i class="fa-solid fa-brain" style={{ fontSize: "9rem" }}></i>
           <br />
           <br />
           <b>EMOTIONAL DEVELOPMENT</b>
-        </div>
-        <div
-          className="col-2 p-3 text-center m-3"
+          </motion.div>
+          <motion.div variants={featureVariants}
+          className="col-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "#801034", color: "white" }}
         >
           <i class="fa-solid fa-user-group" style={{ fontSize: "9rem" }}></i>
           <br />
           <br />
           <b>SOCIAL DEVELOPMENT</b>
-        </div>
-      </div>
+          </motion.div>
+    </motion.div>
     </div>
   );
 }

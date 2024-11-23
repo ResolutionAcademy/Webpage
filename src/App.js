@@ -7,7 +7,7 @@ import ContactPage from "./landingpage/contact/contactpage";
 import CocurricularPage from "./landingpage/cocurricular/cocurricularpage";
 import AdmissionPage from "./landingpage/admission/AdmissionPage";
 import AcademicsPage from "./landingpage/academics/academicspage";
-import AboutPage from "./landingpage/about/aboutpage";
+import AboutUsPage from "./landingpage/aboutus/AboutUsPage";
 import Notfound from "./landingpage/Notfound";
 
 import "./App.css";
@@ -25,7 +25,7 @@ function App() {
             <Route path="/cocurricular" element={<CocurricularPage />} />
             <Route path="/admissions" element={<AdmissionPage />} />
             <Route path="/academics" element={<AcademicsPage />} />
-            <Route path="/about" element={<AboutPage />} />
+            <Route path="/about" element={<AboutUsPage />} />
             <Route path="*" element={<Notfound />} />
           </Routes>
         </div>
