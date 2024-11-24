@@ -287,3 +287,94 @@ h5, h6 { font-weight: bolder }
   color: white;
   transform: rotateY(180deg);
 } */
+.fee-structure {
+  width: 70%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+@media (max-width:1150px){
+  .fee-structure {
+    width: 97%;
+  }
+}
+.table-container {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on touch devices */
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Optional border for the scroll container */
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px; /* Ensures the table doesn't shrink too much */
+}
+
+.fee-table th,
+.fee-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+}
+
+.header-cell {
+  background-color: #002060; /* Dark blue */
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-header td {
+  background-color: #404040; /* Gray */
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.fee-table td {
+  height: 50px;
+}
+
+.fee-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.fee-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.table-head{
+  background-color: #023db3;
+  display: flex;
+  justify-content: center;
+  align-items:end ;
+  height: 70px;
+}
+
+.table-option{
+  margin: 0px 50px;
+  color: white;
+  background-color: #002060; /* Dark blue */
+  padding:10px;
+}
+
+@media (max-width:690px){
+   .table-head{
+     justify-content:space-around;
+   }
+   .table-option{
+     margin: 0px;
+     font-size: small;
+   }
+}
+
+.selected-table-option{
+  color: black;
+  background-color: #f1f1f1;
+}
+
+.fee-notes{
+  text-align: justify;
+}
