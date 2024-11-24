@@ -8,7 +8,7 @@ function Footer() {
     >
       <div className="row justify-content-center justify-content-start-lg" style={{borderBottom:"2px bottom #8d8e8f"}}>
         <div
-          className="col-md-3 p-3 my-3 footer-contact"
+          className="col-md-3 p-3 ms-5 my-3 footer-contact"
           style={{ borderRight: "2px solid #8d8e8f" }}
         >
           <h5>GET IN TOUCH WITH US</h5>
