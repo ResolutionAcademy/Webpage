@@ -62,7 +62,7 @@ h5, h6 { font-weight: bolder }
    font-weight: bold;
 }
 .h-links:hover{
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .hero-text{
