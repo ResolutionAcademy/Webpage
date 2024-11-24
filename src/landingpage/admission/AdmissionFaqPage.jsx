@@ -51,11 +51,11 @@ const AdmissionFaqPage = () => {
             <div key={index} className="border rounded-lg">
               <div className="flex items-center p-4 bg-gray-50 border-b">
                 <button onClick={() => handleToggle(index)} className="w-6 h-6 flex items-center justify-center border rounded-full mr-3">
-                    {toggleAnswer[index] ? <span className="text-gray-600">+</span> : <span className="text-gray-600">-</span>}
+                    {!toggleAnswer[index] ? <span className="text-gray-600">+</span> : <span className="text-gray-600">-</span>}
                 </button>
                 <h2 className="font-medium text-lg text-gray-800">{faq.question}</h2>
               </div>
-              {!toggleAnswer[index] && <div className="p-4 bg-white">
+              {toggleAnswer[index] && <div className="p-4 bg-white">
                 <p className="text-gray-600">{faq.answer}</p>
               </div>}
             </div>
