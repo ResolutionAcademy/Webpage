@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useRef } from 'react';
+
 
 const AdmissionFaqPage = () => {
     const faqs = [
@@ -24,12 +24,12 @@ const AdmissionFaqPage = () => {
         answer: "Yes, the school has a boarding facilities for students from Class II to Class XII."
       }
     ];
-    const toggle = []
-    const [toggleAnswer, setToggleAnswer] = useState(toggle.map(() => true))
+    const toggle = [true,true,true,true,true]
+    const [toggleAnswer, setToggleAnswer] = useState(toggle.map(() => false))
     
     const handleToggle = (index) => {
-        setToggleAnswer((prev) =>
-          prev.map((value, i) => (i === index ? !value : value))
+        setToggleAnswer((toggle) =>
+          toggle.map((value, i) => (i === index ? !value : value))
         );
     };
     
