@@ -1,15 +1,13 @@
 import React from 'react'
 
 export default function AdmissionPage() {
+    document.title = 'Admission'
     return (
       <div className="min-h-screen bg-gray-50 p-4 md:p-8">
         <div className="mx-auto max-w-4xl space-y-8">
           {/* Header */}
           <div className="space-y-2">
             <h1 className="text-2xl font-bold text-blue-950">Admission Journey</h1>
-            <div className="text-sm text-gray-600">
-              Resolution Academy Senior Secondary School {'>'} Admissions {'>'} Admission Journey
-            </div>
           </div>
   
           {/* Introduction */}

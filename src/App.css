@@ -57,13 +57,65 @@ h5, h6 { font-weight: bolder }
 .h-links{
    text-decoration: none;
    color: white;
-   padding: 2px 10px;
-   margin-left: 15px;
+   padding: 10px;
+   margin:0px 15px;
    font-weight: bold;
 }
 .h-links:hover{
   text-decoration: underline;
 }
+
+.hero-text{
+   font-size: 1.5rem;
+}
+.school-logo-header{
+  display: inline;
+  object-fit: contain;
+}
+@media (min-width:1000px){
+  .school-name-header{
+    font-size: 1.9rem ;
+  }
+  .school-logo-header{
+      height: 120px;
+      width: 120px;
+  }
+}
+
+.welcome-header{
+  display: flex;
+  flex-direction: column;
+}
+.welcome-message{
+  padding: 3px;
+  text-align: center;
+ }
+.header-icons{
+  margin: 3px 50px;
+  display: flex;
+}
+/* @media (min-width:1200px){
+  .welcome-header{
+     display: flex;
+  }
+}*/
+.welcome-message{
+  text-align: center;
+ }
+ .header-icons{
+  justify-content: center;
+}
+ /* @media (max-width:1200px){
+   .welcome-header{
+      flex-direction: column;
+   }
+   .welcome-message{
+    text-align: center;
+   }
+   .header-icons{
+    justify-content: center;
+  }
+}  */
 
 .hero-section{
   height: 700px;
@@ -71,6 +123,65 @@ h5, h6 { font-weight: bolder }
   background-position: center;
   background-repeat: no-repeat
 }
+
+@media (max-width:1000px){
+  .school-name-header{
+    font-size: 1.5rem ;
+  }
+  .school-logo-header{
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (max-width:890px){
+  .hero-text{
+    font-size: 1.3rem;
+  }
+ .school-name-header{
+     font-size: 1.1rem ;
+  }
+  .school-logo-header{
+    height: 100px;
+    width: 100px;
+  }
+  .hero-section{
+    height: 600px;
+   }
+}
+
+@media (max-width:520px){
+  .hero-text{
+    font-size: 0.8rem;
+ }
+ .hero-section{
+  height: 450px;
+ }
+}
+
+@media (max-width:773px){
+   .h-links{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px;
+     padding: 5px 9px;
+   }
+   .nav-bar{
+      width: 70%;
+      justify-content: center;
+   }
+}
+
+@media (max-width:590px){
+  .nav-bar{
+    width: 100%;
+    justify-content: center;
+ }
+}
+
+
+
 
 .slide-left-enter {
   animation: slide-left 0.5s forwards; /* Animation lasts 0.5 seconds */
@@ -100,6 +211,42 @@ h5, h6 { font-weight: bolder }
   text-decoration: none;
   color: rgb(81, 80, 80);
 }
+
+.nav-bar {
+  display: flex;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f4f4f4;
+}
+
 
 /* 
 .flip-card {

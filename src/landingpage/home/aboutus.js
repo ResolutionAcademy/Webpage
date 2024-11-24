@@ -1,6 +1,6 @@
 function AboutUs() {
   return (
-    <div className="container m-3" style={{ backgroundColor: "#0368ED" }}>
+    <div className="container my-3" style={{ backgroundColor: "#0368ED" }}>
       <div className="row justify-content-center align-items-center">
         <div className="col-3 line" style={{ border: "1px solid white" }}></div>
         <div className="col-sm-4 text-center p-4" style={{ color: "white" }}>

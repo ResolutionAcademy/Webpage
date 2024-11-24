@@ -16,7 +16,8 @@ function Admission() {
         style={{ backgroundColor: "#801034" }}
       >
         <div
-          className="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-3 text-center m-3"
+
+          className="col-8 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "white" }}
         >
           <Link to="/" className='links-black'>
@@ -27,7 +28,7 @@ function Admission() {
           </Link>
         </div>
         <div
-          className="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-3 text-center m-3"
+          className="col-8 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "white" }}
         >
           <Link to="/" className='links-black'>
@@ -41,7 +42,7 @@ function Admission() {
           </Link>
         </div>
         <div
-          className="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-3 text-center m-3"
+          className="col-8 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "white" }}
         >
           <Link to="/" className='links-black'>
