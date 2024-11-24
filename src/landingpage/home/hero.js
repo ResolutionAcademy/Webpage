@@ -75,13 +75,15 @@ function HeroSection() {
         className="row justify-content-center mt-3"
         style={{ backgroundColor: "#0368ED" }}
       >
-        <div className="col-8 text-center text-light p-4">
-          <h2>DISCOVER YOUR POTENTIAL & GRAB A FREE SEAT</h2>
-          <h2>
+        <div className="col-md-8 hero-text text-center text-light p-4">
+          <p><b>DISCOVER YOUR POTENTIAL & GRAB A FREE SEAT</b></p>
+          <p>
             {" "}
+            <b>
             APPLY FOR RESOLUTION ADMISSION TEST(RAT) <br></br>
             FOR CLASS IX,X,XI & XII (SCIENCE)
-          </h2>
+            </b>
+          </p>
           <button type="button" class="btn btn-danger m-3">APPLY NOW</button>
         </div>
       </div>

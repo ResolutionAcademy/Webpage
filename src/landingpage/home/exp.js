@@ -22,11 +22,11 @@ function LearningExperience() {
   return (
     <div className="container">
       <div className="row justify-content-center align-items-center">
-        <div className="col-3" style={{ border: "1px solid black" }}></div>
-        <div className="col-4 text-center p-4" style={{ color: "#HHH" }}>
+        <div className="col-3 line" style={{ border: "1px solid black" }}></div>
+        <div className="col-sm-4 text-center p-4" style={{ color: "#HHH" }}>
           <h2>LEARNING EXPERIENCE</h2>
         </div>
-        <div className="col-3" style={{ border: "1px solid black" }}></div>
+        <div className="col-3 line" style={{ border: "1px solid black" }}></div>
       </div>
 
       <motion.div
@@ -39,7 +39,8 @@ function LearningExperience() {
         >
 
         <motion.div variants={featureVariants}
-          className="col-2 p-3 text-center m-3 rounded-md"
+          className="col-8 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-3 text-center m-3 rounded-md"
+
           style={{ backgroundColor: "#801034", color: "white" }}
         >
           <i
@@ -49,9 +50,11 @@ function LearningExperience() {
           <br></br>
           <br></br>
           <b>ACADEMIC DEVELOPMENT</b>
+
         </motion.div>
         <motion.div variants={featureVariants}
-          className="col-2 p-3 text-center m-3 rounded-md"
+          className="col-8 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-3 text-center m-3 rounded-md"
+
           style={{ backgroundColor: "#801034", color: "white" }}
         >
           <i
@@ -61,18 +64,20 @@ function LearningExperience() {
           <br></br>
           <br></br>
           <b>PHYSICAL DEVELOPMENT</b>
+
           </motion.div>
           <motion.div variants={featureVariants}
-          className="col-2 p-3 text-center m-3 rounded-md"
+          className="col-8 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "#801034", color: "white" }}
         >
           <i class="fa-solid fa-brain" style={{ fontSize: "9rem" }}></i>
           <br />
           <br />
           <b>EMOTIONAL DEVELOPMENT</b>
+
           </motion.div>
           <motion.div variants={featureVariants}
-          className="col-2 p-3 text-center m-3 rounded-md"
+          className="col-8 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-3 text-center m-3 rounded-md"
           style={{ backgroundColor: "#801034", color: "white" }}
         >
           <i class="fa-solid fa-user-group" style={{ fontSize: "9rem" }}></i>

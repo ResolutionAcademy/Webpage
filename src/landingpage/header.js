@@ -1,27 +1,24 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <>
+      <Head />
       <div className="container">
-        <Head/>
+        
         <div className="row justify-content-center" style={{ height: "150px" }}>
           <div className="col-md-12 col-lg-11 col-xxl-9 text-center d-flex flex-row align-items-center justify-content-center">
             <div className="me-3">
               <img
+                className="school-logo-header"
                 src="media/logo.jpg"
                 alt="Logo"
-                style={{
-                  display: "inline",
-                  height: "120px",
-                  width: "120px",
-                  objectFit: "contain",
-                }}
+
               />
             </div>
             <div>
-              <h2 style={{ color: "#0952EF" }}>
+              <h2 className="school-name-header" style={{ color: "#0952EF" }}>
                 RESOLUTION ACADEMY SENIOR SECONDARY SCHOOL
               </h2>
               <p>
@@ -41,10 +38,10 @@ function Header() {
         </div>
         <div
           className="row justify-content-center"
-          style={{ backgroundColor: "#0368ED", height: "50px" }}
+          style={{ backgroundColor: "#0368ED"}}
         >
-          <div className="col-10 d-flex flex-column align-items-center justify-content-center">
-            <div>
+          <div className="col-12 col-lg-10 d-flex flex-column align-items-center justify-content-center">
+            <div className="nav-bar" style={{display:"flex",flexWrap:"wrap"}}>
               <Link to="/" className="h-links">
                 HOME
               </Link>
@@ -54,13 +51,29 @@ function Header() {
               <Link to="/contact" className="h-links">
                 CONTACT
               </Link>
-              <Link to="/cocurricular" className="h-links">
+              <Link to="/cocurricular" className="h-links no-underline">
                 CO-CURRICULAR
               </Link>
-              <Link to="/admissions" className="h-links">
-                ADMISSIONS
-              </Link>
-              
+
+              <div className="dropdown">
+                <div className="h-links" style={{textDecoration:"none"}}>
+                  ADMISSIONS&nbsp;<i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div className="dropdown-menu">
+                  <Link to="/admissions/journey" className="dropdown-item">
+                    Admission Journey
+                  </Link>
+                  <Link to="/admissions/fees" className="dropdown-item">
+                    Fee Structure
+                  </Link>
+                  <Link to="/admissions/test" className="dropdown-item">
+                    Resolution Aptitute test
+                  </Link>
+                  <Link to="/admissions/faq" className="dropdown-item">
+                    Admission FAQ
+                  </Link>
+                </div>
+              </div>
 
               <Link to="/academics" className="h-links">
                 ACADEMICS
@@ -73,11 +86,10 @@ function Header() {
   );
 }
 
-function Head(){
-  
-  const message = "WELCOME TO RESOLUTION ACADEMY SENIOR SECONDARY SCHOOL"
-  let [welcome,setWelcome] = useState("W");
-  let [index,setIndex] = useState(1)
+function Head() {
+  const message = "WELCOME TO RESOLUTION ACADEMY SENIOR SECONDARY SCHOOL";
+  let [welcome, setWelcome] = useState("W");
+  let [index, setIndex] = useState(1);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -86,40 +98,52 @@ function Head(){
           setIndex(1); // Reset the index
           return "W"; // Clear the welcome message
         } else {
-          setIndex((prevIndex) => prevIndex + 1/2); // Increment index
-          return message.slice(0, index); // Append next character  
+          setIndex((prevIndex) => prevIndex + 1 / 2); // Increment index
+          return message.slice(0, index); // Append next character
         }
       });
     }, 300);
-    
+
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [index, message]);
-  return(
+  return (
     <div
-    className="row justify-content-center"
-    style={{ backgroundColor: "#0368ED", height: "50px" }}
-  >
-    <div className="col-6 d-flex text-start flex-column justify-content-center" style={{ color: "white" }}>
-      <h5>{welcome}</h5>
-    </div>
-    <div className="col-5 d-flex flex-column align-items-center justify-content-center">
-      <div className="row">
-        <div className="col-2" style={{color:"white",marginRight:"20px"}}>
-          <i class="fa-brands fa-facebook"></i>
-        </div>
-        <div className="col-2" style={{color:"white",marginRight:"20px"}}>
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-        <div className="col-2" style={{color:"white",marginRight:"20px"}}>
-          <i class="fa-brands fa-youtube"></i>
-        </div>
-        <div className="col-2" style={{color:"white",marginRight:"0px"}}>
-          <i class="fa-brands fa-linkedin"></i>
+      className="welcome-header"
+      style={{ backgroundColor: "#0368ED",width:"100%"}}
+    >
+      <div
+        className="welcome-message "
+        style={{ color: "white" }}
+      >
+        <h5>{welcome}</h5>
+      </div>
+      <div className="">
+        <div className="header-icons">
+          <div
+            className=""
+            style={{ color: "white", marginRight: "20px" }}
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div
+            className=""
+            style={{ color: "white", marginRight: "20px" }}
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div
+            className=""
+            style={{ color: "white", marginRight: "20px" }}
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div className="" style={{ color: "white", marginRight: "0px" }}>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  )
+  );
 }
 
 export default Header;

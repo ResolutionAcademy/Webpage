@@ -2,16 +2,46 @@
   font-family: "Roboto", serif;
 }
 
-.container{
-   max-width: 100%;
+html,body {
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: 2.5rem; /* Example size */
+   font-size: 2.00rem; 
+  
+  }
+h2 { font-size: 1.74rem; }
+h3 { font-size: 1.52rem; }
+h4 { font-size: 1.32rem; }
+h5 { font-size: 1.15rem; }
+h6 { font-size: 1.00rem; }
+
+h1, h2, h3, h4,
+h5, h6 { font-weight: bolder }
+
+@media (max-width: 600px) {
+  .line {
+    display: none;
+  }
 }
 
-h2 {
-  font-size: 2rem; /* Slightly smaller */
+
+
+@media (max-width: 770px) {
+  .footer-contact{
+    margin-left: 60px;
+  }
+  .footer-location{
+      text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .quick-links{
+    font-size: small;
+  }
+}
+.container{
+   max-width: 100%;
 }
 
 .app{
@@ -27,13 +57,65 @@ h2 {
 .h-links{
    text-decoration: none;
    color: white;
-   padding: 2px 10px;
-   margin-left: 15px;
+   padding: 10px;
+   margin:0px 15px;
    font-weight: bold;
 }
 .h-links:hover{
-  text-decoration: underline;
+  text-decoration: none;
 }
+
+.hero-text{
+   font-size: 1.5rem;
+}
+.school-logo-header{
+  display: inline;
+  object-fit: contain;
+}
+@media (min-width:1000px){
+  .school-name-header{
+    font-size: 1.9rem ;
+  }
+  .school-logo-header{
+      height: 120px;
+      width: 120px;
+  }
+}
+
+.welcome-header{
+  display: flex;
+  flex-direction: column;
+}
+.welcome-message{
+  padding: 3px;
+  text-align: center;
+ }
+.header-icons{
+  margin: 3px 50px;
+  display: flex;
+}
+/* @media (min-width:1200px){
+  .welcome-header{
+     display: flex;
+  }
+}*/
+.welcome-message{
+  text-align: center;
+ }
+ .header-icons{
+  justify-content: center;
+}
+ /* @media (max-width:1200px){
+   .welcome-header{
+      flex-direction: column;
+   }
+   .welcome-message{
+    text-align: center;
+   }
+   .header-icons{
+    justify-content: center;
+  }
+}  */
 
 .hero-section{
   height: 700px;
@@ -41,6 +123,65 @@ h2 {
   background-position: center;
   background-repeat: no-repeat
 }
+
+@media (max-width:1000px){
+  .school-name-header{
+    font-size: 1.5rem ;
+  }
+  .school-logo-header{
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (max-width:890px){
+  .hero-text{
+    font-size: 1.3rem;
+  }
+ .school-name-header{
+     font-size: 1.1rem ;
+  }
+  .school-logo-header{
+    height: 100px;
+    width: 100px;
+  }
+  .hero-section{
+    height: 600px;
+   }
+}
+
+@media (max-width:520px){
+  .hero-text{
+    font-size: 0.8rem;
+ }
+ .hero-section{
+  height: 450px;
+ }
+}
+
+@media (max-width:773px){
+   .h-links{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px;
+     padding: 5px 9px;
+   }
+   .nav-bar{
+      width: 70%;
+      justify-content: center;
+   }
+}
+
+@media (max-width:590px){
+  .nav-bar{
+    width: 100%;
+    justify-content: center;
+ }
+}
+
+
+
 
 .slide-left-enter {
   animation: slide-left 0.5s forwards; /* Animation lasts 0.5 seconds */
@@ -55,6 +196,8 @@ h2 {
   }
 }
 
+
+
 .quick-links{
    background-color: #0368ED;
 }
@@ -63,3 +206,84 @@ h2 {
   color:white;
   text-decoration: none;
 }
+
+.links-black{
+  text-decoration: none;
+  color: rgb(81, 80, 80);
+}
+
+.nav-bar {
+  display: flex;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f4f4f4;
+}
+
+
+/* 
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+} */
