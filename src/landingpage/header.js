@@ -123,7 +123,9 @@ function Head() {
             className=""
             style={{ color: "white", marginRight: "20px" }}
           >
+               <Link to="https://www.facebook.com/profile.php?id=61560494695194" target="_blank">
             <i class="fa-brands fa-facebook"></i>
+            </Link>
           </div>
           <div
             className=""
@@ -134,8 +136,10 @@ function Head() {
           <div
             className=""
             style={{ color: "white", marginRight: "20px" }}
-          >
+          > 
+        
             <i class="fa-brands fa-youtube"></i>
+
           </div>
           <div className="" style={{ color: "white", marginRight: "0px" }}>
             <i class="fa-brands fa-linkedin"></i>

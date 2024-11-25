@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import {Link} from 'react-router-dom'
 
 let images = [
   {
@@ -10,6 +11,8 @@ let images = [
     link: "media/heroimg1.jpg",
   },
 ];
+
+let applyLink = "https://forms.gle/REmLfbe99V8NDrKT8";
 
 function HeroSection() {
   let [index, setIndex] = useState(0);
@@ -76,22 +79,30 @@ function HeroSection() {
       </div>
       <div
         className="row justify-content-center mt-3"
-        style={{ backgroundColor: "#0368ED" }}
+        style={{ backgroundColor: "#500394"}}
       >
         <div className="col-md-8 hero-text text-center text-light p-4">
-          <p>
-            <b>DISCOVER YOUR POTENTIAL & GRAB A FREE SEAT</b>
-          </p>
+          <h1 className="pt-3 fs-1">
+            <b>RESOLUTION ADMISSION TEST - 2025</b>
+          </h1>
+          <h2 className="fs-1 pb-4" style={{color:"#F5D37E"}}>
+            <b>IX, X , XI & XII (SCIENCE)</b>
+          </h2>
           <p>
             {" "}
             <b>
-              APPLY FOR RESOLUTION ADMISSION TEST(RAT) <br></br>
-              FOR CLASS IX,X,XI & XII (SCIENCE)
+            DISCOVER YOUR POTENTIAL & GRAB A FREE SEAT
             </b>
           </p>
-          <button type="button" class="btn btn-danger m-3">
-            APPLY NOW
+          <div>
+          <button type="button" class="btn px-5 py-4 btn-danger m-5" style={{borderRadius:"30px"}}>
+            <Link to={applyLink} target="_blank"><h3>APPLY NOW</h3></Link>
           </button>
+          <button type="button" class="btn px-5 py-4 btn-danger m-5" style={{borderRadius:"30px"}}>
+            <Link to="/admissions/test"><h3>LEARN MORE</h3></Link>
+          </button>
+          </div>
+
         </div>
       </div>
     </>

@@ -365,6 +365,13 @@ h5, h6 { font-weight: bolder }
   padding:10px;
 }
 
+.table-option1{
+  margin: 0px 5px;
+  color: white;
+  background-color: #002060; /* Dark blue */
+  padding:10px;
+}
+
 @media (max-width:690px){
    .table-head{
      justify-content:space-around;
@@ -373,6 +380,13 @@ h5, h6 { font-weight: bolder }
      margin: 0px;
      font-size: small;
    }
+   .table-option1{
+    margin: 0px 1px;
+    color: white;
+    background-color: #002060; /* Dark blue */
+    padding:3px;
+    font-size: small;
+  }
 }
 
 .selected-table-option{
