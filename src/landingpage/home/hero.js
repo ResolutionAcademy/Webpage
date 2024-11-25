@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 let images = [
   {
     name: "Img 1",
-    link: "media/heroimg.png",
+    link: "https://res.cloudinary.com/dzlmpyr5h/image/upload/v1732517466/j14olbzonpdr2yyvg36w.jpg",
   },
   {
     name: "Img 2",
-    link: "media/heroimg1.jpg",
+    link: "https://res.cloudinary.com/dzlmpyr5h/image/upload/v1732518150/tw25owilpeyvyv91dvwi.jpg",
   },
 ];
 
