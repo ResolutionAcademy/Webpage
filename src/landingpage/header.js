@@ -102,7 +102,7 @@ function Head() {
           return message.slice(0, index); // Append next character
         }
       });
-    }, 300);
+    }, 250);
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [index, message]);
