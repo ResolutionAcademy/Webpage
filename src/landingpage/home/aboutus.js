@@ -1,3 +1,5 @@
+import React from "react";
+import {Link} from 'react-router-dom';
 function AboutUs() {
   return (
     <div className="container my-3" style={{ backgroundColor: "#0368ED" }}>
@@ -9,14 +11,68 @@ function AboutUs() {
         <div className="col-3 line" style={{ border: "1px solid white" }}></div>
       </div>
       <div className="row justify-content-center">
-        <div className="col-8 col-lg-4 m-1" style={{height:"600px",backgroundColor:"white"}}></div>
-        <div className="col-8 col-lg-3 m-1" style={{height:"600px"}}>
-          <div className="row mb-1" style={{height:"49%",backgroundColor:"white"}}></div>
-          <div className="row" style={{height:"50%",backgroundColor:"white"}}></div>
+        <div
+          className="col-10 col-lg-3 m-1 photo-container"
+        >
+          <img src="aboutUs/img1.png" alt="Description 1" className="photo" />
+          <div className="overlay">
+             <ul>
+               <li><h3>Empathy</h3></li>
+               <br></br>
+               <li><h3>Equity</h3></li>
+               <br></br>
+               <li><h3>Enterprise</h3></li>
+               <br></br>
+               <li><h3>Integrity</h3></li>
+               <br></br>
+               <li><h3>Nurturing Relationships</h3></li>
+               <br></br>
+               <li><h3>Inclusivity</h3></li>
+             </ul>
+             <br></br>
+             <p><Link to='/about'>Learn More</Link></p>
+          </div>
         </div>
-        <div className="col-8 col-lg-3 m-1" style={{height:"600px"}}>
-          <div className="row mb-1" style={{height:"49%",backgroundColor:"white"}}></div>
-          <div className="row" style={{height:"50%",backgroundColor:"white"}}></div>
+        <div
+          className="col-10 col-lg-3 m-1 photo-container"
+        >
+          <img src="aboutUs/img2.png" alt="Description 2" className="photo" />
+          <div className="overlay">
+            <h3>Our Vision</h3>
+            <br></br>
+            <p>
+              Resolution Academy Senior Secondary School aspires to become a
+              premier institution that is deeply rooted in Indian ethics. We aim
+              to equip the future generation of learners with a repertoire of
+              skills and a sensitized perspective to understand and appreciate
+              diversity, enabling them to develop solutions to meet the
+              challenges of a dynamic environment and society.
+            </p>
+            <br></br>
+             <p><Link to='/about'>Learn More</Link></p>
+          </div>
+        </div>
+        <div
+          className="col-10 col-lg-3 m-1 photo-container"
+        >
+          <img src="aboutUs/img3.png" alt="Description 3" className="photo" />
+          <div className="overlay">
+            <h3>Our Mission</h3>
+            <br></br>
+            <p>
+              Resolution Academy Senior Secondary School works at providing a
+              broad based education to develop its learners to be:
+             
+                Balanced in Mind, Body and Heart
+                 Minded Inquirers And Effective Communicators
+                Able to acknowledge and accept diversity and appreciate differences
+                Responsible for Human Rights, Sustainable Development
+                Global Well Being thereby reflecting a true global citizen
+         
+            </p>
+            <br></br>
+             <p><Link to='/about'>Learn More</Link></p>
+          </div>
         </div>
       </div>
     </div>
