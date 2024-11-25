@@ -27,7 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/cocurricular" element={<CocurricularPage />} />
+            <Route path="/cocurricula" element={<CocurricularPage />} />
             <Route path="/admissions/faq" element={<AdmissionFaqPage />} />
             <Route path="/admissions/test" element={<AptituteTestPage/>}/>
             <Route path="/admissions/journey" element={<AdmissionPage/>}/>

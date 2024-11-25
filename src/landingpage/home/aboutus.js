@@ -26,8 +26,6 @@ function AboutUs() {
                <li><h3>Integrity</h3></li>
                <br></br>
                <li><h3>Nurturing Relationships</h3></li>
-               <br></br>
-               <li><h3>Inclusivity</h3></li>
              </ul>
              <br></br>
              <p><Link to='/about'>Learn More</Link></p>
