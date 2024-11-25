@@ -6,7 +6,6 @@ function Header() {
     <>
       <Head />
       <div className="container">
-        
         <div className="row justify-content-center" style={{ height: "150px" }}>
           <div className="col-md-12 col-lg-11 col-xxl-9 text-center d-flex flex-row align-items-center justify-content-center">
             <div className="me-3">
@@ -14,14 +13,13 @@ function Header() {
                 className="school-logo-header"
                 src="https://res.cloudinary.com/ddtlcwj12/image/upload/v1732542097/logo_uzfghk.jpg"
                 alt="Logo"
-
               />
             </div>
             <div>
               <h2 className="school-name-header" style={{ color: "#0952EF" }}>
                 RESOLUTION ACADEMY SENIOR SECONDARY SCHOOL
               </h2>
-              <p>
+              <p className="school-code">
                 <b>INSTITUTION CODE: 08H1999/071759</b>
               </p>
             </div>
@@ -38,10 +36,13 @@ function Header() {
         </div>
         <div
           className="row justify-content-center"
-          style={{ backgroundColor: "#0368ED"}}
+          style={{ backgroundColor: "#0368ED" }}
         >
           <div className="col-12 col-lg-10 d-flex flex-column align-items-center justify-content-center">
-            <div className="nav-bar" style={{display:"flex",flexWrap:"wrap"}}>
+            <div
+              className="nav-bar"
+              style={{ display: "flex", flexWrap: "wrap" }}
+            >
               <Link to="/" className="h-links">
                 HOME
               </Link>
@@ -56,7 +57,7 @@ function Header() {
               </Link>
 
               <div className="dropdown">
-                <div className="h-links" style={{textDecoration:"none"}}>
+                <div className="h-links" style={{ textDecoration: "none" }}>
                   ADMISSIONS&nbsp;<i class="fa-solid fa-angle-down"></i>
                 </div>
                 <div className="dropdown-menu">
@@ -109,40 +110,40 @@ function Head() {
   return (
     <div
       className="welcome-header"
-      style={{ backgroundColor: "#0368ED",width:"100%"}}
+      style={{ backgroundColor: "#0368ED", width: "100%" }}
     >
-      <div
-        className="welcome-message "
-        style={{ color: "white" }}
-      >
+      <div className="welcome-message " style={{ color: "white" }}>
         <h5>{welcome}</h5>
       </div>
       <div className="">
         <div className="header-icons">
-          <div
-            className=""
-            style={{ color: "white", marginRight: "20px" }}
-          >
-               <Link to="https://www.facebook.com/profile.php?id=61560494695194" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
+          <div className="" style={{ color: "white", marginRight: "20px" }}>
+            <Link
+              to="https://www.facebook.com/profile.php?id=61560494695194"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook"></i>
             </Link>
           </div>
-          <div
-            className=""
-            style={{ color: "white", marginRight: "20px" }}
-          >
-            <i class="fa-brands fa-instagram"></i>
+          <div className="" style={{ color: "white", marginRight: "20px" }}>
+            <Link to="/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </Link>
           </div>
-          <div
-            className=""
-            style={{ color: "white", marginRight: "20px" }}
-          > 
-        
-            <i class="fa-brands fa-youtube"></i>
-
+          <div className="" style={{ color: "white", marginRight: "20px" }}>
+            <Link to="/" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </Link>
+          </div>
+          <div className="" style={{ color: "white", marginRight: "20px" }}>
+            <Link to="mailto:ragsss2017@gmail.com" target="_blank">
+            <i class="fa-solid fa-square-envelope"></i>
+            </Link>
           </div>
           <div className="" style={{ color: "white", marginRight: "0px" }}>
-            <i class="fa-brands fa-linkedin"></i>
+            <Link to="/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </Link>
           </div>
         </div>
       </div>

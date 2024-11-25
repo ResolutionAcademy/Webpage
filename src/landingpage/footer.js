@@ -21,7 +21,7 @@ function Footer() {
             <br />
             INQUIRY: +91 00000 00000
             <br />
-            EMAIL ID: resultion@gmail.com
+            EMAIL ID: ragsss2017@gmail.com
             <br />
           </p>
           <br></br>
@@ -35,6 +35,12 @@ function Footer() {
             <div className="col-2">
             <Link to='/'><i class="fa-brands fa-youtube" style={{color:"red"}}></i></Link>
             </div>
+            <div className='col-2'>
+            <Link to="mailto:ragsss2017@gmail.com" target="_blank">
+            <i class="fa-solid fa-square-envelope"></i>
+            </Link>
+            </div>
+            
             <div className="col-2">
             <Link to='/'><i class="fa-brands fa-linkedin" ></i></Link>
             </div>

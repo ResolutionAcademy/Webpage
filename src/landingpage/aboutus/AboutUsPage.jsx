@@ -12,9 +12,10 @@ function AboutUsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       {/* Header Section */}
+      
       <div className="mb-8">
-        <h1 className="text-xl font-medium text-gray-600 mb-2">
-          Guiding Principles
+        <h1 className="text-2xl font-bold mb-3">
+          <b>Guiding Principles</b>
         </h1>
         <img
           src="https://res.cloudinary.com/ddtlcwj12/image/upload/v1732542082/img1_j0alha.png"
@@ -88,7 +89,7 @@ function AboutUsPage() {
           stakeholders of the larger society
         </p>
         <div className="grid md:grid-cols-2 gap-4">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-8 mr-5">
             <div>
             <img
               src="https://res.cloudinary.com/ddtlcwj12/image/upload/v1732542063/img4_am9cd1.png"
@@ -132,8 +133,8 @@ function AboutUsPage() {
                 onMouseLeave={() => {
                   changeSelected(index);
                 }}
-                className="p-2 bg-blue-50 rounded-lg hover:scale-10 transition-transform duration-300 shadow-md"
-                style={{width:"400px"}}
+                className="p-2 bg-blue-50 rounded-lg hover:scale-10 transition-transform duration-300 shadow-md core-value-text"
+             
               >
                 <h3 className="font-bold text-blue-800 mb-1">{value.title}</h3>
                 {selected[index] && (

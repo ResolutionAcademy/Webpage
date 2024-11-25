@@ -2,7 +2,7 @@ import React from 'react'
 
 function AptituteTestPage() {
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
       <header className="text-center mb-8">
         <h1 className="text-2xl font-bold mb-2">RESOLUTION ACADEMY SENIOR SECONDARY SCHOOL</h1>
         <h2 className="text-xl mb-2">RESOLUTION ADMISSION TEST - 2025</h2>

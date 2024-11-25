@@ -137,6 +137,9 @@ h5, h6 { font-weight: bolder }
     height: 120px;
     width: 120px;
   }
+  .school-code{
+    font-size: 1rem;
+  }
 }
 
 @media (max-width:890px){
@@ -144,7 +147,7 @@ h5, h6 { font-weight: bolder }
     font-size: 1.3rem;
   }
  .school-name-header{
-     font-size: 1.1rem ;
+     font-size: 1.2rem ;
   }
   .school-logo-header{
     height: 100px;
@@ -153,6 +156,9 @@ h5, h6 { font-weight: bolder }
   .hero-section{
     height: 600px;
    }
+   .school-code{
+    font-size: 0.6rem;
+  }
 }
 
 @media (max-width:520px){
@@ -430,4 +436,15 @@ h5, h6 { font-weight: bolder }
 
 .photo-container:hover .overlay {
   opacity: 1; /* Show overlay text on hover */
+}
+
+.core-value-text{
+   width: 400px;
+}
+
+@media (max-width:765px){
+  .core-value-text{
+     width: 95%;
+     margin-right: 10px;
+  }
 }
