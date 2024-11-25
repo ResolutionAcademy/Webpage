@@ -17,7 +17,7 @@ function AboutUsPage() {
           Guiding Principles
         </h1>
         <img
-          src="aboutUs/img1.png"
+          src="https://res.cloudinary.com/ddtlcwj12/image/upload/v1732542082/img1_j0alha.png"
           alt="Students of Resolution Academy"
           className="w-full h-auto rounded-lg"
         />
@@ -39,7 +39,7 @@ function AboutUsPage() {
           </div>
           <div className="md:w-1/2">
             <img
-              src="aboutUs/img2.png"
+              src="https://res.cloudinary.com/dzlmpyr5h/image/upload/v1732517466/j14olbzonpdr2yyvg36w.jpg"
               alt="Faculty members"
               className="w-full h-auto rounded-lg"
             />
@@ -53,7 +53,7 @@ function AboutUsPage() {
         <div className="flex flex-col md:flex-row gap-6">
           <div className="md:w-1/2">
             <img
-              src="aboutUs/img3.png"
+              src="https://res.cloudinary.com/ddtlcwj12/image/upload/v1732542071/img3_lxezpf.png"
               alt="School event"
               className="w-full h-auto rounded-lg"
             />
@@ -91,7 +91,7 @@ function AboutUsPage() {
           <div className="flex justify-center mb-8">
             <div>
             <img
-              src="aboutUs/img4.png"
+              src="https://res.cloudinary.com/ddtlcwj12/image/upload/v1732542063/img4_am9cd1.png"
               alt="Core Values Diagram"
               className="w-full max-w-md h-15"
             />

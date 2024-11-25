@@ -12,7 +12,7 @@ function Header() {
             <div className="me-3">
               <img
                 className="school-logo-header"
-                src="media/logo.jpg"
+                src="https://res.cloudinary.com/ddtlcwj12/image/upload/v1732542097/logo_uzfghk.jpg"
                 alt="Logo"
 
               />

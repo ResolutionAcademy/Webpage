@@ -14,7 +14,7 @@ function AboutUs() {
         <div
           className="col-10 col-lg-3 m-1 photo-container"
         >
-          <img src="aboutUs/img1.png" alt="Description 1" className="photo" />
+          <img src="https://res.cloudinary.com/ddtlcwj12/image/upload/v1732542082/img1_j0alha.png" alt="Description 1" className="photo" />
           <div className="overlay">
              <ul>
                <li><h3>Empathy</h3></li>
@@ -36,7 +36,7 @@ function AboutUs() {
         <div
           className="col-10 col-lg-3 m-1 photo-container"
         >
-          <img src="aboutUs/img2.png" alt="Description 2" className="photo" />
+          <img src="https://res.cloudinary.com/dzlmpyr5h/image/upload/v1732517466/j14olbzonpdr2yyvg36w.jpg" alt="Description 2" className="photo" />
           <div className="overlay">
             <h3>Our Vision</h3>
             <br></br>
@@ -55,7 +55,7 @@ function AboutUs() {
         <div
           className="col-10 col-lg-3 m-1 photo-container"
         >
-          <img src="aboutUs/img3.png" alt="Description 3" className="photo" />
+          <img src="https://res.cloudinary.com/ddtlcwj12/image/upload/v1732542071/img3_lxezpf.png" alt="Description 3" className="photo" />
           <div className="overlay">
             <h3>Our Mission</h3>
             <br></br>
